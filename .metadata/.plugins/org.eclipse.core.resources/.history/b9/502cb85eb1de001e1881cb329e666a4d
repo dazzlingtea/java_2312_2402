@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class String2675 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int caseNumber = Integer.parseInt(sc.nextLine());
+		for(int i = 0; i < caseNumber; i++) {
+			String input[] = sc.nextLine().split(" ");
+			int repeat = Integer.parseInt(input[0]);
+			String str[] =input[1].split(""); 
+			String output = "";
+			
+			for(int j=0; j < str.length; j++) {
+				for(int k=0; k < repeat; k++) {
+					output += str[j];					
+				}
+			}
+			System.out.println();
+			System.out.println(output);	
+		}
+	}
+
+}
